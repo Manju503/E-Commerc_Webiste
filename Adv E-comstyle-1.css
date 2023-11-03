@@ -1,0 +1,873 @@
+*{
+    margin:0;
+    padding:0;
+}
+.nav{
+    background-color:white ;
+    z-index:9;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    box-shadow:0px 3px 65px 0px rgba(0,0,0,.15) ;
+}
+.nav_top{
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+
+}
+.logo{
+    float:left;
+    width:60%;
+}
+.logo img{
+   padding:10px; 
+}
+.nav_side{
+    float:right;
+    width:40%;
+    margin-top:30px;
+    
+}
+.nav_side a{
+    text-decoration: none;
+    margin-right:20px;
+    margin-top:20px;
+    padding-top: 20px;
+    color:black;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:15px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.nav_side a:hover{
+    color:orange;
+    text-decoration: underline;
+    transition: all 1s ease;
+}
+.main{
+    margin-top: 3%;
+    background-image: url('ap.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height:80vh;
+   
+}
+.main .main_content{
+    margin-left: 10%;
+    margin-right:10%;
+}
+.main .main_content h4{
+    color:white;
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    line-height:80px;
+
+}
+.main .main_content h5 {
+    margin-top: 2%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:15px;
+    opacity: 0.7;
+    color:#7B7D7D;
+    font-weight: lighter;
+    line-height: 30px;
+    
+}
+.main .main_content .btn{
+    margin-top: 30%;
+  
+    margin-left: 450px;
+}
+.main .main_content .btn a{
+    text-decoration:none;
+    margin:100px;
+    padding:10px 20px;
+    background-color:#a066d9;
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    border:2px solid black;
+    border-radius: 20px;
+    transition: .5s;
+}
+.main .main_content .btn a:hover{
+    background-color:#3498DB ;
+    color:white;
+    border:none;
+    border-bottom:4px solid white;
+    transition:0.5s;
+    text-align: bottom;
+}
+.product{
+    padding-bottom: 50px;
+}
+.product h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#6E29C1;
+    font-size: 25px;
+    text-align:center;
+    padding:20px;
+     padding-top: 10%;
+    margin-left: 10%;
+    margin-right:10%;   
+}
+.product .product_container{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.product .product_container .item{
+    width:33.33%;
+    margin:10px;
+    height:auto;
+
+}
+.product .product_container .item:hover{
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);
+}
+.product .product_container .item .item_img{
+    width:100%;
+    height:250px;
+    overflow:hidden;
+
+}
+.product .product_container .item .item_img img{
+    width: 100%;
+    height:250px;
+}
+
+.product .product_container .item .item_content{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.product .product_container .item .item_content h3{
+   padding:10px;
+   font-size: 25px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+.product .product_container .item .item_content p{
+    padding:10px;
+    font-size:15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.product .product_container .item .item_content a{
+    text-decoration:none;
+    margin:5px;
+    padding:10px 20px;
+    background-color:#a066d9;
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    border:2px solid black;
+    border-radius: 20px;
+    transition: .5s;
+}
+.product .product_container .item .item_content a:hover{
+    background-color:#3498DB ;
+    color:white;
+    border:none;
+    border-bottom:2px solid white;
+    transition:0.5s;
+}
+.product .product_btn{
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.product .product_btn a{
+    text-decoration:none;
+    padding:10px 20px;
+    background-color:#34495E;
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    border:2px solid white;
+    border-radius: 10px;
+    transition: .5s;
+}
+.product .product_btn a:hover{
+    background-color:#3498DB ;
+    color:white;
+    border:none;
+    border-bottom:4px solid white;
+    transition:0.5s;
+    
+}
+.keypoint{
+    padding:50px;
+}
+.keypoint h2{
+    color:#6E29C1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding:10px;
+}
+.keypoint .key_container{
+    display: flex;
+}
+.keypoint .key_container .key_content{
+    width:40px;
+    padding:20px;
+    float:left;
+    width: 50%;
+}
+.keypoint .key_container .key_content li{
+    list-style:none;
+    margin:20px;
+    padding:5px;
+    border-left:2px solid #a066d9;
+    color:#34495E;
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);
+}
+.keypoint .key_container .key_img{
+    width:50%;
+    float: right;
+    margin-left:150px;   
+}
+.keypoint .key_container .key_img img{
+    width:75%;
+    margin-left: 75px;
+    margin-top: 20px;
+    border-radius: 35px;
+}
+.testi{
+    padding: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.testi h2{
+color:#6E29C1 ;
+font-size: 25px;
+text-align: center;
+padding:10px;
+text-transform: uppercase;
+}
+.testi .testi_container{
+    margin-right:10%;
+    margin-left:10%;
+    text-align: center;
+}
+.testi .testi_container .carousel-inner{
+    background-color: white;
+    box-shadow: none;
+}
+.testi .testi_container .item{
+    width:100%;
+    padding:20px;
+    background-color:white;
+    box-shadow: none;
+}
+.testi .testi_container .item .item_img{
+    width:100%;
+    height:250px;
+    overflow:hidden;
+}
+.testi .testi_container .item.item_img img{
+    width: 100%;
+    height:100%;
+    border-radius: 50%;
+    
+}
+.testi .testi_container .item .item_content{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.testi .testi_container .item .item_content h3{
+   padding:10px;
+   font-size: 25px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+.testi .testi_container .item .item_content p{
+    padding:10px;
+    font-size:15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.team{
+    padding:50px;
+}
+.team h2{
+    color:#6E29C1 ;
+    font-size: 25px;
+    text-align: center;
+    padding:10px;
+    text-transform: uppercase;
+}
+.team .team_container{
+    display: flex;
+}
+.team .team_container .team_video{
+    width:50%;
+    padding:20px;
+}
+.team .team_container .team_video iframe{
+    width:100%;
+    border:5px solid #a066d9 ;
+}
+.team .team_container .team_content{
+    width:40%;
+    padding:20px;
+    margin-left:50px ;
+}
+.team .team_container .team_content p{
+    padding:10px;
+    font-size:15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.feed{
+    padding:30px;
+    background-image: linear-gradient(30deg,#6E29C1,white);
+    background-size: cover;
+}
+.feed h2{
+    color:#6E29C1 ;
+    font-size: 25px;
+    font-family: 'Trebuchet MS';
+    text-align: center;
+    padding:10px;
+    text-transform: uppercase;
+}
+.feed .feed_form {
+text-align: center;
+}
+.feed .feed_form form input{
+    width: 30%;
+    margin:10px;
+    padding:8px;
+    outline: none;
+    border: none ;
+}
+.feed .feed_form form textarea{
+    width: 30%;
+    margin:10px;
+    padding:8px;
+    outline: none;
+    border: none ;
+}
+.feed .feed_form form button{
+    width: 30%;
+    margin:10px;
+    padding:8px;
+    outline: none;
+    border: none ;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+}
+.feed .feed_form form button:hover{
+    width: 30%;
+    margin:10px;
+    padding:8px;
+    outline: none;
+    border: none ;
+    background-color:#3498DB;
+    color: white;
+    border-radius: 5px;
+}
+.blog{
+    padding: 100px;
+}
+.blog h2{
+    color:#6E29C1 ;
+    font-size: 25px;
+    text-align: center;
+    padding:10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+.blog .blog_container{
+    display: flex;
+}
+.blog .blog_container .blog_content{
+    width: 40%;
+    height: 100%;
+    padding: 10px;
+    border-left: 5px solid orange;
+    border-radius: 10px;
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);
+}   
+.blog .blog_container .blog_content p{
+    padding:10px;
+    font-size:15px;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    line-height: 25px;
+}
+.blog .blog_container .blog_pic{
+    width:50%;
+    float: right;
+    margin-left:150px;
+}
+.blog .blog_container .blog_pic img{
+    width:75%;
+    margin-left: 75px;
+    margin-top: 20px;
+    border-radius: 35px;
+}
+
+
+
+.log{
+    padding: 100px;
+    width: 50%;
+}
+.log .log_container{
+    width: 100%;
+    margin-left: 70%;
+    border-left: 5px solid #6E29C1;
+    border-radius: 10px;
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);
+}
+.log .log_container h2{
+    color:#6E29C1 ;
+    font-size: 25px;
+    text-align: center;
+    padding:10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+.log .log_container .log_details{
+    text-align: center;
+}
+.log .log_container .log_details form input{
+    padding: 15px;
+    outline: none;
+    border:none;
+    border-left:2px solid #6E29C1;
+    box-shadow: 2px 2px 12px darkgrey;
+    border-radius: 10px;
+    font-size: medium;
+}
+.log .log_container .log_details form input:focus{
+    border-left:2px solid blue;
+}
+.log .log_container .log_details form button{
+    border: none;
+    outline: none;
+    width: 50%;
+    padding: 15px;
+    font-size: medium;
+    background-color: rgb(174, 129, 215);
+    border-radius: 10px;
+    color: white;
+}
+.log .log_container .log_details form button:hover{
+    border: none;
+    outline: none;
+    width: 50%;
+    padding: 15px;
+    font-size: medium;
+    background-color: #3498DB;
+    border-radius: 10px;
+    color: white;
+}
+.log .log_container p{
+    text-align: center;
+    font-weight: bold;
+    line-height: 10px;
+    margin-top: 35px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+.log .log_container p a{
+    color: #a066d9;
+    text-decoration: none;
+}
+.log .log_container p a:hover{
+    color: #3498DB;
+    text-decoration: none;
+}
+.register{ 
+    padding: 100px;
+    float: middle;
+    margin-left: 140px;
+}
+.register .register_container{
+    width: 50%;
+    margin-left: 250px;
+    border-left: 5px solid orange;
+    border-radius: 10px;
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);
+}
+.register .register_container h2{
+    color: orange;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 15px;
+    text-transform: uppercase;
+}
+.register .register_container .register_form{
+    text-align: center;
+}
+.register .register_container .register_form form input{
+    padding: 15px;
+    width: 80%;
+    outline: none;
+    border:none;
+    border-left:3px solid orange;
+    box-shadow: 2px 2px 12px darkgrey;
+    border-radius: 10px;
+    font-size: medium;
+}
+.register .register_container .register_form form input:focus{
+    border-left :3px solid blue;
+}
+.register .register_container .register_form form select{
+    padding: 15px;
+    width: 80%;
+    outline: none;
+    border: none;
+    border-left: 3px solid orange;
+    box-shadow: 2px 2px 12px darkgrey;
+    border-radius: 10px;
+    font-size: medium;
+}
+.register .register_container .register_form form select:focus{
+    border-left: 3px solid blue;
+}
+.register .register_container .register_form form textarea{
+    padding: 15px;
+    width: 80%;
+    outline: none;
+    border:none;
+    border-left:3px solid orange;
+    box-shadow: 2px 2px 12px darkgrey;
+    border-radius: 10px;
+    font-size: medium;
+}
+.register .register_container .register_form form textarea:focus{
+    border-left:3px solid blue;
+}
+
+
+
+.about_us{
+    padding:100px;   
+}
+.about_us h2{
+    color:#6E29C1 ;
+    font-size: 25px;
+    text-align: center;
+    padding:10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+.about_us p{
+     padding:10px;
+    font-size:13px;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    line-height: 25px;
+}
+.contact_container{
+    padding: 100px;
+}
+.contact_container h2{
+    color:#6E29C1 ;
+    font-size: 25px;
+    text-align:center;
+    padding:10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+.contact_container .g_map{
+    border:5px solid#34495E;
+}
+.contact_container .contact_content{
+    padding:20px;
+}
+.contact_container .contact_content p{
+    padding:10px;
+    font-size:14px;
+    font-family: 'Trebuchet MS';
+    line-height: 25px;
+}
+footer{
+    background-image:white;
+    padding:50px
+}
+footer .pages{
+    text-align: center;
+}
+footer .pages h3{
+    color:#6E29C1 ;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding:5px;
+}
+footer .pages a{
+    text-decoration: none;
+    margin: 10px;
+    color:black;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+footer .pages a:hover{
+    color:#6E29C1;
+}
+footer .doc{
+    text-align: center;
+}
+footer .doc h3{
+    color:#6E29C1 ;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding:5px;
+}
+footer .doc a{
+    text-decoration: none;
+    margin: 10px;
+    color:black;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+footer .doc a:hover{
+    color:#6E29C1;
+}
+footer .social{
+    text-align: center;
+}
+footer .social h3{
+    color:#6E29C1 ;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding:5px;
+}
+footer .social a{
+    font-size: 30px;
+    color:#154a7e;
+    text-decoration: none;
+    margin:10px;
+ }
+footer .social a:hover{
+    color:#3498DB;
+}
+footer .contact{
+    text-align: center;
+}
+footer .contact h3{
+    color:#6E29C1  ;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding:5px;
+}
+ footer .contact a{
+    font-size: 30px;
+    color:#154a7e;
+    text-decoration: none;
+    margin:10px;
+ }
+footer .contact a:hover{
+    color:#3498DB;
+}
+
+
+
+.register{ 
+    margin-bottom: -7%;
+    padding: 100px;
+}
+.register .register_container{
+    width: 50%;
+    margin-left: 250px;
+    border-left: 5px solid #6E29C1;
+    border-radius: 10px;
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);
+}
+.register .register_container h2{
+    color: #6E29C1;
+    font-size: 35px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 15px;
+    text-transform: uppercase;
+}
+.register .register_container .register_form{
+    text-align: center;
+}
+.register .register_container .register_form form input{
+    padding: 15px;
+    width: 80%;
+    outline: none;
+    border:none;
+    border-left: 3px solid #ccebff;
+    box-shadow: 2px 2px 12px darkgrey;
+    border-radius: 10px;
+    font-size: medium;
+}
+.register .register_container .register_form form input:focus{
+    border-left :3px solid #6E29C1;
+}
+.register .register_container .register_form form select{
+    padding: 15px;
+    width: 80%;
+    outline: none;
+    border: none;
+    border-left: 3px solid #ccebff;
+    box-shadow: 2px 2px 12px darkgrey;
+    border-radius: 10px;
+    font-size: medium;
+}
+.register .register_container .register_form form select:focus{
+    border-left :3px solid #6E29C1;
+}
+.register .register_container .register_form form textarea{
+    padding: 15px;
+    width: 80%;
+    outline: none;
+    border:none;
+    border-left: 3px solid #ccebff;
+    box-shadow: 2px 2px 12px darkgrey;
+    border-radius: 10px;
+    font-size: medium;
+}
+.register .register_container .register_form form textarea:focus{
+    border-left :3px solid #6E29C1;
+}
+
+.register .register_container .register_form form button{
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.register .register_container .register_form form button{
+    text-decoration:none;
+    padding:10px;
+    background-color:#34495E;
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    border:2px solid white;
+    border-radius: 10px;
+    transition: .5s;
+}
+.register .register_container .register_form form button:hover{
+    background-color:#3498DB ;
+    color:white;
+    border:none;
+    border-bottom:4px solid white;
+    transition:0.5s;
+    text-align:center;
+}
+.adr{ 
+    margin-bottom: -7%;
+    padding: 100px;
+}
+.adr .adr_container{
+    width: 50%;
+    margin-left: 250px;
+    border-left: 5px solid #6E29C1;
+    border-radius: 10px;
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);
+}
+.adr .adr_container h2{
+    color: #6E29C1;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 15px;
+    text-transform: uppercase;
+}
+.adr .adr_container .adr_form{
+    text-align: center;
+}
+.adr .adr_container .adr_form form input{
+    padding: 15px;
+    width: 80%;
+    outline: none;
+    border:none;
+    border-left: 3px solid #ccebff;
+    box-shadow: 2px 2px 12px darkgrey;
+    border-radius: 10px;
+    font-size: medium;
+}
+.adr .adr_container .adr_form form input:focus{
+    border-left :3px solid #6E29C1;
+}
+.adr .adr_container .adr_form form select{
+    padding: 15px;
+    width: 80%;
+    outline: none;
+    border: none;
+    border-left: 3px solid #ccebff;
+    box-shadow: 2px 2px 12px darkgrey;
+    border-radius: 10px;
+    font-size: medium;
+}
+.adr .adr_container .adr_form form select:focus{
+    border-left :3px solid #6E29C1;
+}
+.adr .adr_container .adr_form form textarea{
+    padding: 15px;
+    width: 80%;
+    outline: none;
+    border:none;
+    border-left: 3px solid #ccebff;
+    box-shadow: 2px 2px 12px darkgrey;
+    border-radius: 10px;
+    font-size: medium;
+}
+.adr .adr_container .adr_form form textarea:focus{
+    border-left :3px solid #6E29C1;
+}
+.adr .adr_container .adr_form form button{
+    text-decoration:none;
+    padding:10px 20px;
+    background-color:#34495E;
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    border:2px solid white;
+    border-radius: 10px;
+    transition: .5s;
+}
+.adr .adr_container .adr_form form button:hover{
+    background-color:#3498DB ;
+    color:white;
+    border:none;
+    border-bottom:4px solid white;
+    transition:0.5s;
+    text-align: bottom;
+}
+.thanks{
+    margin-bottom: -7%;
+    padding: 100px;
+}
+.thanks h1{
+    color: #6E29C1;
+    font-size:xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 15px;
+    text-transform: uppercase;
+}
+.thanks p{
+    text-align: center;
+    line-height: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
+.thanks p a{
+    color: rgb(90, 133, 154);
+    text-decoration: none;
+}
+.thanks p a:hover{
+    color:#6E29C1;
+    text-decoration: none;
+}
